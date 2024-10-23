@@ -19,7 +19,7 @@ void turned(bool clockwise) {
     if (IS_LAYER_ON(0)) {
         tap_code(clockwise ? KC_VOLU : KC_VOLD);
     } else {
-        tap_code16(clockwise ? KC_BRIU : KC_BRID);
+        tap_code(clockwise ? KC_BRIU : KC_BRID);
     }
 }
 
