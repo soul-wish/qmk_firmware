@@ -7,10 +7,10 @@
     "features": {
         "bootmagic": true,
         "command": false,
-        "console": true,
+        "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": false
+        "nkro": true
     },
     "community_layouts": ["split_3x5_3"],
     "matrix_pins": {
@@ -29,14 +29,15 @@
             "GP26",
             "GP26"
         ],
-        "rows": ["GP3", "GP1", "GP2", "GP0",    "GP27", "GP28", "GP29", "GP8"]
+        "rows": ["GP3", "GP1", "GP2", "GP0", "GP27", "GP28", "GP29", "GP8"]
     },
     "processor": "RP2040",
     "url": "",
     "usb": {
         "device_version": "1.0.0",
         "pid": "0x0000",
-        "vid": "0xFEE3"
+        "vid": "0xFEE3",
+        "force_nkro": true
     },
     "layouts": {
         "LAYOUT_split_3x5_3": {
@@ -53,7 +54,6 @@
                 { "matrix": [0, 3], "x": 10, "y": 0.125 },
                 { "matrix": [0, 4], "x": 11, "y": 0.25 },
 
-
                 { "matrix": [5, 10], "x": 0, "y": 1.25 },
                 { "matrix": [5, 9], "x": 1, "y": 1.125 },
                 { "matrix": [5, 8], "x": 2, "y": 1 },
@@ -66,7 +66,6 @@
                 { "matrix": [1, 3], "x": 10, "y": 1.125 },
                 { "matrix": [1, 4], "x": 11, "y": 1.25 },
 
-
                 { "matrix": [6, 10], "x": 0, "y": 2.25 },
                 { "matrix": [6, 9], "x": 1, "y": 2.125 },
                 { "matrix": [6, 8], "x": 2, "y": 2 },
@@ -78,7 +77,6 @@
                 { "matrix": [2, 2], "x": 9, "y": 2 },
                 { "matrix": [2, 3], "x": 10, "y": 2.125 },
                 { "matrix": [2, 4], "x": 11, "y": 2.25 },
-
 
                 { "matrix": [6, 11], "x": 2.5, "y": 3.25 },
                 { "matrix": [5, 11], "x": 3.5, "y": 3.5 },
